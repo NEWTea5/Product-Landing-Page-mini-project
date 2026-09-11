@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Orbit-X</a>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+    <header class="sticky top-0 bg-white border-b border-gray-200">
+        <nav class="flex items-center justify-between px-6 py-4">
+            <a href="#" class="text-xl font-bold text-gray-900">Orbit-X</a>
+            <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <li><a href="#features" class="hover:text-gray-900">Features</a></li>
+                <li><a href="#benefits" class="hover:text-gray-900">Benefits</a></li>
+                <li><a href="#reviews" class="hover:text-gray-900">Reviews</a></li>
+                <li><a href="#pricing" class="hover:text-gray-900">Pricing</a></li>
             </ul>
+
+            <a href="#pricing" class="hidden md:inline-block bg-gray-900 hover:bg-gray-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Buy Now</a>
         </nav> 
     </header>
-    <section>
+    <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-            <h1>Welcome to Orbit-X</h1>
-            <p>All-day battery, a camera that actually delivers, and a design that doesn't feel like everyone else's phone.</p>
-            <a href="#pricing">Buy Now</a>
-            <a href="#features">Learn More</a>
+            <h1 class="text-4xl sm:text5xl font-bold text-gray-900 leading-tight">Welcome to Orbit-X</h1>
+            
+            <p class="mt-6 text-lg text-gray-600">All-day battery, a camera that actually delivers, and a design that doesn't feel like everyone else's phone.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#pricing" class="bg-gray-900 hover:bg-gray-700 text-white font-semibold px-6 py-3 rounded-lg transition">Buy Now</a>
+                <a href="#features" class="border border-gray-300 hover:border-gray-400 text-gray-900 font-semibold px-6 py-3 rounded-lg transition">Learn More</a>
+            </div>
         </div>
         <div>
-            <img src="product-image.jpg" alt="Product Image">
+            <img src="/image/product-image.jpg" alt="Product Image" class="w-full rounded-2xl">
         </div>
     </section>        
+    
     <section id="features">
         <h2>Features</h2>
         <div>
