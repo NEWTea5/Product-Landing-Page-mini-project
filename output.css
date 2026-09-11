@@ -244,6 +244,12 @@
   .aspect-video {
     aspect-ratio: var(--aspect-video);
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-full {
     width: 100%;
   }
@@ -469,6 +475,9 @@
   @media (width >= 48rem) {
     .md\:flex {
       display: flex;
+    }
+    .md\:hidden {
+      display: none;
     }
     .md\:inline-block {
       display: inline-block;
